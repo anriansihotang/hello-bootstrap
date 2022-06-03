@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Media ,Alert,Badge,Button} from "react-bootstrap";
+import { Container, Row, Col, Media ,Alert,Badge,Button,Breadcrumb} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
 			<Container>
+				<Breadcrumb>
+					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+					<Breadcrumb.Item href="/">Info</Breadcrumb.Item>
+				</Breadcrumb>
+
 			<Row>
 				<Col>
 					<Media>

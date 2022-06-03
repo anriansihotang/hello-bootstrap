@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Media } from "react-bootstrap";
+import { Container, Row, Col, Media ,Alert} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
 			<Container>
 			<Row>
 				<Col>
-				<Media>
+					<Media>
 					<img
 						width={64}
 						height={64}
@@ -23,10 +23,10 @@ class App extends Component {
 						Donec lacinia congue felis in faucibus.
 						</p>
 					</Media.Body>
-				</Media>
+					</Media>
 				</Col>
 				<Col>
-				<Media>
+					<Media>
 					<img
 						width={64}
 						height={64}
@@ -43,11 +43,13 @@ class App extends Component {
 						Donec lacinia congue felis in faucibus.
 						</p>
 					</Media.Body>
-				</Media>
+					</Media>
 				</Col>
 			</Row>
 			<Row>
-				<Col>1 of 3</Col>
+				<Col>
+					<Alert variant="danger">User yang kamau masukan salah</Alert>
+				</Col>
 				<Col>2 of 3</Col>
 				<Col>3 of 3</Col>
 			</Row>

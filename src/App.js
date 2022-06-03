@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Media ,Alert} from "react-bootstrap";
+import { Container, Row, Col, Media ,Alert,Badge,Button} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -50,7 +50,14 @@ class App extends Component {
 				<Col>
 					<Alert variant="danger">User yang kamau masukan salah</Alert>
 				</Col>
-				<Col>2 of 3</Col>
+				<Col>
+					<h5>
+						pesannya adalah <Badge variant="secondary">Benar</Badge>
+					</h5>
+					<Button variant="primary">
+						Profile <Badge variant="light">1</Badge>
+					</Button>
+				</Col>
 				<Col>3 of 3</Col>
 			</Row>
 			</Container>

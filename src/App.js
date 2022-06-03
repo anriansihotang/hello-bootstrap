@@ -63,7 +63,9 @@ class App extends Component {
 						Profile <Badge variant="light">1</Badge>
 					</Button>
 				</Col>
-				<Col>3 of 3</Col>
+				<Col>
+					<Button variant="info">Kirim</Button>
+				</Col>
 			</Row>
 			</Container>
 		);

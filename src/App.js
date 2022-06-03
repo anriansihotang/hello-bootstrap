@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
-	Badge,Button,Breadcrumb,ButtonGroup, ButtonToolbar} from "react-bootstrap";
+	Badge,Button,Breadcrumb,ButtonGroup, 
+	ButtonToolbar,Card} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -79,6 +80,23 @@ class App extends Component {
 						</ButtonGroup>
 					</ButtonToolbar>
 				</Col>
+			</Row>
+			<br/>
+			<Row>
+				<Col>
+					<Card style={{width: "300px"}}>
+						<Card.Img variant="top" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sate.png" />
+
+						<Card.Body>
+							<Card.Title>Sate</Card.Title>
+							<Card.Text>Sate adalah makanan khas I	ndonesia</Card.Text>
+							<Button variant="primary">Detail Now</Button>
+						</Card.Body>
+					</Card>
+					
+				</Col>
+				<Col>Kolom 2</Col>
+				<Col>Kolom 3</Col>
 			</Row>
 			</Container>
 		);

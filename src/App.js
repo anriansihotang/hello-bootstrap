@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
-	Form,InputGroup,FormControl,Image} from "react-bootstrap";
+	Form,InputGroup,FormControl,Image,
+	Figure} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -176,7 +177,15 @@ class App extends Component {
 						<FormControl placeholder="Username" />
 					</InputGroup>
 
-					<Image src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/foodsmall.jpg" roundedCircle/>
+					<Image src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/foodsmall.jpg" 
+					roundedCircle/>
+
+					<Figure>
+						<Figure.Image width={170} height={180} alt="Nasi Padang" src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/nasipadang.jpg"/>
+						<Figure.Caption>
+							Nasi Padang
+						</Figure.Caption>
+					</Figure>
 				</Col>
 			</Row>
 			</Container>

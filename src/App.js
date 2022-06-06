@@ -3,17 +3,15 @@ import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
-	Figure,Jumbotron,ListGroup, Modal,Nav} from "react-bootstrap";
+	Figure,Jumbotron,ListGroup, Modal,
+	Nav,Navbar} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
 			<Container>
-				<Breadcrumb>
-					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-					<Breadcrumb.Item href="/">Info</Breadcrumb.Item>
-				</Breadcrumb>
-
-				<Nav>
+				<Navbar bg="dark" variant="dark">
+					<Navbar.Brand href="/">Home</Navbar.Brand>
+					<Nav>
 					<Nav.Item>
 						<Nav.Link href="/">Home</Nav.Link>
 					</Nav.Item>
@@ -23,7 +21,19 @@ class App extends Component {
 					<Nav.Item>
 						<Nav.Link href="/">Info</Nav.Link>
 					</Nav.Item>
+
+					<Form inline>
+						<FormControl type="text" placeholder="Search"/>
+						<Button variant="info">Search</Button>
+					</Form>
 				</Nav>
+				</Navbar>
+				<Breadcrumb>
+					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+					<Breadcrumb.Item href="/">Info</Breadcrumb.Item>
+				</Breadcrumb>
+
+
 			<Carousel>
 				<Carousel.Item>
 					<img className='d-block w-100' 

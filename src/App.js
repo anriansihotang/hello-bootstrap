@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
-	ButtonToolbar,Card,Carousel,Dropdown} from "react-bootstrap";
+	ButtonToolbar,Card,Carousel,Dropdown,Form} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -137,6 +137,35 @@ class App extends Component {
 							<Dropdown.Item href="#/">Paket Wisata	</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
+
+					<Form>
+						<Form.Group>
+							<Form.Label>Name</Form.Label>
+							<Form.Control type="text" placeholder="Masukan Nama" />
+						</Form.Group>
+
+						<Form.Group>
+							<Form.Label>Email Address</Form.Label>
+							<Form.Control type="text" placeholder="Masukan Email" />
+							<Form.Text className="text-muted">
+								Kami tidak akan Menyalahgunakan Email anda
+							</Form.Text>
+						</Form.Group>
+
+						<Form.Group>
+							<Form.Label>Password</Form.Label>
+							<Form.Control type="password" placeholder="Masukan password" />
+						</Form.Group>
+
+						<Form.Group>
+							<Form.Check type="checkbox" label="Kami Setuju" />
+						</Form.Group>
+
+						<Button variant="primary" type="submit">
+							Submit
+						</Button>
+					</Form>
+
 				</Col>
 				<Col>Kolom 3</Col>
 			</Row>

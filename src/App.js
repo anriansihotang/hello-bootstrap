@@ -3,7 +3,7 @@ import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
-	Figure} from "react-bootstrap";
+	Figure,Jumbotron} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -43,6 +43,12 @@ class App extends Component {
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
+
+			<Jumbotron>
+				<h1>Hello, world!</h1>
+				<p>Selamat Datang di Website</p>
+				<Button variant="primary">Check Detail</Button>
+			</Jumbotron>
 			<br/>
 			<Row>
 				<Col>

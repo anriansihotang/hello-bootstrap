@@ -3,7 +3,7 @@ import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
-	Figure,Jumbotron} from "react-bootstrap";
+	Figure,Jumbotron,ListGroup} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -193,6 +193,20 @@ class App extends Component {
 						</Figure.Caption>
 					</Figure>
 				</Col>
+			</Row>
+			<br/> <br/>
+
+			<Row>
+				<Col>
+					<ListGroup>
+						<ListGroup.Item active>Wisata</ListGroup.Item>
+						<ListGroup.Item>Travel</ListGroup.Item>
+						<ListGroup.Item>Hotel</ListGroup.Item>
+						<ListGroup.Item>Paket Wisata</ListGroup.Item>
+					</ListGroup>
+				</Col>
+				<Col></Col>
+				<Col></Col>
 			</Row>
 			</Container>
 		);

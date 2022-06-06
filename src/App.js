@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
-	ButtonToolbar,Card} from "react-bootstrap";
+	ButtonToolbar,Card,Carousel} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -10,7 +10,38 @@ class App extends Component {
 					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
 					<Breadcrumb.Item href="/">Info</Breadcrumb.Item>
 				</Breadcrumb>
+			<Carousel>
+				<Carousel.Item>
+					<img className='d-block w-100' 
+					src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel1.jpeg" 
+					alt="Travel 1" />
+					<Carousel.Caption>
+						<h3>Tiket Pesawat Murah</h3>
+						<p>Dapatkan Promo Tiket Pesawat Murah</p>
+					</Carousel.Caption>
+				</Carousel.Item>
 
+				<Carousel.Item>
+					<img className='d-block w-100' 
+					src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel2.png" 
+					alt="Travel 2" />
+					<Carousel.Caption>
+						<h3>Tiket Pesawat Murah 2</h3>
+						<p>Dapatkan Promo Tiket Pesawat Murah 2</p>
+					</Carousel.Caption>
+				</Carousel.Item>
+
+				<Carousel.Item>
+					<img className='d-block w-100' 
+					src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg" 
+					alt="Travel 3" />
+					<Carousel.Caption>
+						<h3>Tiket Pesawat Murah3</h3>
+						<p>Dapatkan Promo Tiket Pesawat Murah 3</p>
+					</Carousel.Caption>
+				</Carousel.Item>
+			</Carousel>
+			<br/>
 			<Row>
 				<Col>
 					<Media>

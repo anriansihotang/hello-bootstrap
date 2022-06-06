@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
-	Form,InputGroup,FormControl} from "react-bootstrap";
+	Form,InputGroup,FormControl,Image} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -175,6 +175,8 @@ class App extends Component {
 						</InputGroup.Prepend>
 						<FormControl placeholder="Username" />
 					</InputGroup>
+
+					<Image src="https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/foodsmall.jpg" roundedCircle/>
 				</Col>
 			</Row>
 			</Container>

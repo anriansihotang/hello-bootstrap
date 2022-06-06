@@ -3,7 +3,7 @@ import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
-	Figure,Jumbotron,ListGroup} from "react-bootstrap";
+	Figure,Jumbotron,ListGroup, Modal,Nav} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -12,6 +12,18 @@ class App extends Component {
 					<Breadcrumb.Item href="/">Home</Breadcrumb.Item>
 					<Breadcrumb.Item href="/">Info</Breadcrumb.Item>
 				</Breadcrumb>
+
+				<Nav>
+					<Nav.Item>
+						<Nav.Link href="/">Home</Nav.Link>
+					</Nav.Item>
+					<Nav.Item>
+						<Nav.Link href="/">Contact</Nav.Link>
+					</Nav.Item>
+					<Nav.Item>
+						<Nav.Link href="/">Info</Nav.Link>
+					</Nav.Item>
+				</Nav>
 			<Carousel>
 				<Carousel.Item>
 					<img className='d-block w-100' 
@@ -205,7 +217,20 @@ class App extends Component {
 						<ListGroup.Item>Paket Wisata</ListGroup.Item>
 					</ListGroup>
 				</Col>
-				<Col></Col>
+				<Col>
+					<Modal.Dialog>
+						<Modal.Header closeButton>
+							<Modal.Title>Info</Modal.Title>
+						</Modal.Header>
+						<Modal.Body>
+							<p>Simpan Data Pelanggan</p>
+						</Modal.Body>
+						<Modal.Footer>
+							<Button variant="secondary">Close</Button>
+							<Button variant="primary">Save Changes</Button>
+						</Modal.Footer>
+					</Modal.Dialog>
+				</Col>
 				<Col></Col>
 			</Row>
 			</Container>

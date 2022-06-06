@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Media ,Alert,
 	Badge,Button,Breadcrumb,ButtonGroup, 
-	ButtonToolbar,Card,Carousel} from "react-bootstrap";
+	ButtonToolbar,Card,Carousel,Dropdown} from "react-bootstrap";
 class App extends Component {
 	render() {
 		return ( 
@@ -126,7 +126,18 @@ class App extends Component {
 					</Card>
 					
 				</Col>
-				<Col>Kolom 2</Col>
+				<Col>
+					<Dropdown>
+						<Dropdown.Toggle variant="success">
+							Pilih Menu
+						</Dropdown.Toggle>
+						<Dropdown.Menu>
+							<Dropdown.Item href="#/">Wisata</Dropdown.Item>
+							<Dropdown.Item href="#/">Hotel</Dropdown.Item>
+							<Dropdown.Item href="#/">Paket Wisata	</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+				</Col>
 				<Col>Kolom 3</Col>
 			</Row>
 			</Container>

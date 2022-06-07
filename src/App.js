@@ -4,9 +4,17 @@ import { Container, Row, Col, Media ,Alert,
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
 	Figure,Jumbotron,ListGroup, Modal,
-	Nav,Navbar} from "react-bootstrap";
+	Nav,Navbar,OverlayTrigger, Popover} from "react-bootstrap";
 class App extends Component {
 	render() {
+		const munculPopover = (
+			<Popover id="popover-basic">
+				<Popover.Title as="h3">Informasi</Popover.Title>
+				<Popover.Content>
+					Selamat Kamu Berhasil
+				</Popover.Content>
+			</Popover>
+		)
 		return ( 
 			<Container>
 				<Navbar bg="dark" variant="dark">
@@ -241,7 +249,11 @@ class App extends Component {
 						</Modal.Footer>
 					</Modal.Dialog>
 				</Col>
-				<Col></Col>
+				<Col>
+					<OverlayTrigger trigger="hover" placement="right" overlay={munculPopover}>
+						<Button variant="success">Munculkan overlay</Button>
+					</OverlayTrigger>
+				</Col>
 			</Row>
 			</Container>
 		);

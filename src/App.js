@@ -4,7 +4,8 @@ import { Container, Row, Col, Media ,Alert,
 	ButtonToolbar,Card,Carousel,Dropdown,
 	Form,InputGroup,FormControl,Image,
 	Figure,Jumbotron,ListGroup, Modal,
-	Nav,Navbar,OverlayTrigger, Popover} from "react-bootstrap";
+	Nav,Navbar,OverlayTrigger, Popover,
+	Pagination} from "react-bootstrap";
 class App extends Component {
 	render() {
 		const munculPopover = (
@@ -253,6 +254,13 @@ class App extends Component {
 					<OverlayTrigger trigger="hover" placement="right" overlay={munculPopover}>
 						<Button variant="success">Munculkan overlay</Button>
 					</OverlayTrigger>
+					<br/>
+					<Pagination size="sm">
+						<Pagination.Item>1</Pagination.Item>
+						<Pagination.Item>2</Pagination.Item>
+						<Pagination.Item active>3</Pagination.Item>
+						<Pagination.Item>4</Pagination.Item>
+					</Pagination>
 				</Col>
 			</Row>
 			</Container>
